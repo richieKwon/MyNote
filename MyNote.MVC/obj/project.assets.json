@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "MyNote.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MyNote.IDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyNote.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyNote.BLL.dll": {}
+        }
+      },
+      "MyNote.IDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MyNote.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyNote.IDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyNote.IDAL.dll": {}
+        }
+      },
+      "MyNote.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/MyNote.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyNote.Model.dll": {}
+        }
+      },
+      "MyNote.MSSQL.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MyNote.IDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyNote.MSSQL.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyNote.MSSQL.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyNote.BLL/1.0.0": {
+      "type": "project",
+      "path": "../MyNote.BLL/MyNote.BLL.csproj",
+      "msbuildProject": "../MyNote.BLL/MyNote.BLL.csproj"
+    },
+    "MyNote.IDAL/1.0.0": {
+      "type": "project",
+      "path": "../MyNote.IDAL/MyNote.IDAL.csproj",
+      "msbuildProject": "../MyNote.IDAL/MyNote.IDAL.csproj"
+    },
+    "MyNote.Model/1.0.0": {
+      "type": "project",
+      "path": "../MyNote.Model/MyNote.Model.csproj",
+      "msbuildProject": "../MyNote.Model/MyNote.Model.csproj"
+    },
+    "MyNote.MSSQL.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MyNote.MSSQL.DAL/MyNote.MSSQL.DAL.csproj",
+      "msbuildProject": "../MyNote.MSSQL.DAL/MyNote.MSSQL.DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "MyNote.BLL >= 1.0.0",
+      "MyNote.MSSQL.DAL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/richie/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/richie/RiderProjects/MyNote/MyNote.MVC/MyNote.MVC.csproj",
+      "projectName": "MyNote.MVC",
+      "projectPath": "/Users/richie/RiderProjects/MyNote/MyNote.MVC/MyNote.MVC.csproj",
+      "packagesPath": "/Users/richie/.nuget/packages/",
+      "outputPath": "/Users/richie/RiderProjects/MyNote/MyNote.MVC/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/richie/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/Users/richie/RiderProjects/MyNote/MyNote.BLL/MyNote.BLL.csproj": {
+              "projectPath": "/Users/richie/RiderProjects/MyNote/MyNote.BLL/MyNote.BLL.csproj"
+            },
+            "/Users/richie/RiderProjects/MyNote/MyNote.MSSQL.DAL/MyNote.MSSQL.DAL.csproj": {
+              "projectPath": "/Users/richie/RiderProjects/MyNote/MyNote.MSSQL.DAL/MyNote.MSSQL.DAL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
