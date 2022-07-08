@@ -31,7 +31,9 @@ namespace MyNote.MVC
             // .AddTransient<T>();
             services.AddControllersWithViews();
             services.AddTransient<UserBll>();
+            services.AddTransient<NoticeBll>();
             services.AddTransient<IUserDal, UserDal>();
+            services.AddTransient<INoticeDal, NoticeDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
